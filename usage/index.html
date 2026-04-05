@@ -19,7 +19,7 @@
       
       
       <link rel="icon" href="../images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -835,9 +835,13 @@ on the <code>/cases/template_bas</code> folder. </p>
 <p>Finally, to run your ensemble:</p>
 <div class="language-bash highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>wavi_ensemble<span class="w"> </span>test_ensemble<span class="w"> </span>anewcase
 </span></code></pre></div>
+<p>You can pass additional parameters to the underlying <code>model_ensemble</code> command by adding them after the case template:</p>
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>wavi_ensemble<span class="w"> </span>my_ensemble<span class="w"> </span>MISMIP_666<span class="w"> </span>--pickup<span class="w"> </span>--skips<span class="w"> </span><span class="m">10</span>
+</span></code></pre></div>
+<p>The extra parameters are passed directly to <code>model_ensemble</code> at the end of the command, after the configuration file and target. Run <code>model_ensemble --help</code> to see all parameter options.</p>
 <h2 id="single-execution">Single execution</h2>
 <p>You can also try running WAVI in single execution mode:</p>
-<div class="language-bash highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>wavi_execute<span class="w"> </span>anewcase<span class="w"> </span>wavi_test
+<div class="language-bash highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a>wavi_execute<span class="w"> </span>anewcase<span class="w"> </span>wavi_test
 </span></code></pre></div>
 
 
